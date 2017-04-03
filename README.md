@@ -40,7 +40,7 @@ write the index of the application and it's priority to this file. In the origin
 # Outputs:
 Log.txt: used to log main events and logs of each node.
 DPC_debug.txt: used to log the details of each iteration. 
-powerCap.txt: power cap printed every second. In our original implementation, power cap passed to power controller. 
+powerCap.txt: power cap printed every second. In our original implementation, power controller enforce/actuate the cap instead of printing it every second. 
 
 # Citations
 If you use any of our ideas please cite our paper and here is our contact information:
