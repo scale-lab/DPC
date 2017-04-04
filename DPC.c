@@ -1,7 +1,8 @@
 /*
  * DPC.c
  * 
- * Copyright 2017 scaleLab <reza_azimi@brown.edu>
+ * Copyright 2017 scaleLab <reza_azimi@brown.edu>, <mbadieik@seas.harvard.edu>
+ * <xin_zhan@brown.edu>, <nali@seas.harvard.edu>, and <sherief_reda@brown.edu> 
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
