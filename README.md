@@ -19,30 +19,30 @@ Run DPC on each node.
 We assumed workload information are known a prior and we select them from the pool of information on runtime. Check out WL_monitor function. 
 
 # Inputs:
-topo.txt instruction
+topo.txt instruction  
 topo.txt has the initial configuration of DPC. The values provided is an example, modify it according to your setup. 
 
 first arg: is the index of the node, index your nodes from 0 to N-1 where N is total number of nodes.
-second arg: in total number of nodes (N).
-third arg: the adjacency matrix which indicates the communication topology between DPC agents, its and N by N matrix, if node i is communicating with node j then put 1 in row i column j. The graog from this adjacency matrix only needs to be complete so even a chaine will work.
-fourth: list of the hostnames of your nodes separated by space. In Linux, the hostname and IPs can be defined in /etc/hosts. 
-fifth: the base port, all nodes listen to this number plus index to connect to other nodes.
-sixth: number of constraints.
-seven: budget for each constraint.
-eighth: constraint matrix if constraint i has node j put 1 in row i column j.
+second arg: in total number of nodes (N).  
+third arg: the adjacency matrix which indicates the communication topology between DPC agents, its and N by N matrix, if node i is communicating with node j then put 1 in row i column j. The graog from this adjacency matrix only needs to be complete so even a chaine will work.  
+fourth: list of the hostnames of your nodes separated by space. In Linux, the hostname and IPs can be defined in /etc/hosts.   
+fifth: the base port, all nodes listen to this number plus index to connect to other nodes.  
+sixth: number of constraints.  
+seven: budget for each constraint.  
+eighth: constraint matrix if constraint i has node j put 1 in row i column j.  
 
-budget.txt instruction
+budget.txt instruction  
 has the total power budget, if the budget changes write the new budget to one of nodes budget.txt and DPC adjust itself.
 
-workload.txt instruction
+workload.txt instruction  
 write the index of the application and it's priority to this file. In the original implementation, this information was provided by the slurmd but here we read it from a file for simplicity.
 
 # Outputs:
-Log.txt: used to log main events and logs of each node.
-DPC_debug.txt: used to log the details of each iteration. 
-powerCap.txt: power cap printed every second. In our original implementation, power controller enforce/actuate the cap instead of printing it every second. 
+Log.txt: used to log main events and logs of each node.  
+DPC_debug.txt: used to log the details of each iteration.   
+powerCap.txt: power cap printed every second. In our original implementation, power controller enforce/actuate the cap instead of printing it every second.   
 
 # Contacts
-If you use any of our ideas please cite our paper and here is our contact information:
+If you use any of our ideas please cite our paper and here is our contact information:  
 reza_azimi at brown dot edu or sherif_reda at brown dot edu
 
