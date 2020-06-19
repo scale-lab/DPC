@@ -4,7 +4,7 @@ aggregated throughput of the entire cluster is maximized, (ii) workload prioriti
 
 For more details please visit our publication:
 
-R. Azimi, M. Badiei, X. Zhan, L. Na and S. Reda, "Fast Decentralized Power Capping for Server Clusters", to appear in IEEE Symposium on High-Performance Computer Architecture, 2017.
+R. Azimi, M. Badiei, X. Zhan, L. Na and S. Reda, "Fast Decentralized Power Capping for Server Clusters",  in IEEE Symposium on High-Performance Computer Architecture, 2017, pp. 181-192, doi: 10.1109/HPCA.2017.49.
 
 # Important notes:
 * Run DPC as root on all nodes.
